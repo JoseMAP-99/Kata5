@@ -48,7 +48,8 @@ public class DataBase {
                         resultset.getString("DEPARTMENT"));
             }
             
-        } catch (Exception e) {
+        } catch (SQLException e) {
+            System.out.println("ERROR DATABASE::select (SQLException) " + e.getMessage());
         }
     }   
 }
